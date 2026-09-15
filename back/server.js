@@ -2,14 +2,14 @@ const express = require("express");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const connectDB = require("./db/db");
+const connectDB = require("./src/db/db");
 const cookieParser = require("cookie-parser");
 
-const adminLoginRoutes = require("./routes/admin.login.routes");
-const adminProjectRoutes = require("./routes/admin.project.routes");
-const adminBlogRoutes = require("./routes/admin.blog.routes");
-const adminUpdateProfileRoutes = require("./routes/admin.updateprofile.routes");
-const userRoutes = require("./routes/user.routes");
+const adminLoginRoutes = require("./src/routes/admin.login.routes");
+const adminProjectRoutes = require("./src/routes/admin.project.routes");
+const adminBlogRoutes = require("./src/routes/admin.blog.routes");
+const adminUpdateProfileRoutes = require("./src/routes/admin.updateprofile.routes");
+const userRoutes = require("./src/routes/user.routes");
 
 const app = express();
 
